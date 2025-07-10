@@ -8,3 +8,150 @@
   img{
     lazy;
   }
+
+    .carousel-img {
+      transition: all 0.4s ease;
+      object-fit: contain;
+    }
+  
+    .big-img {
+      width: 250px;
+      height: 150px;
+    }
+  
+    .small-img {
+      width: 120px;
+      height: 80px;
+      opacity: 0.6;
+    }
+  
+    .custom-carousel-btn {
+      width: 50px;
+      height: 50px;
+     border:none;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+    .img-1 {
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: auto;
+    z-index: 2;
+  }
+
+  .img-2 {
+    top: 150px;
+    left: 40%;
+    width: 70%;
+    height: auto;
+    z-index: 3;
+  }
+
+  .bg-layer {
+    top: 30px;
+    left: 25%;
+    width: 60%;
+    height: 300px;
+    background-color: #233F76;
+    z-index: 1;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .img-1 {
+      width: 69%;
+      top: 0;
+      left: 3%;
+    }
+
+    .img-2 {
+      width: 79%;
+      top: 145px;
+      left: 19%;
+    }
+
+    .bg-layer {
+      width: 75%;
+      left: 12%;
+      top: 20px;
+      height: 280px;
+    }
+  }
+
+
+
+    .hover-box {
+      position: relative;
+      overflow: hidden;
+      padding: 50px 15px;
+      transition: all 0.4s ease;
+      height: 400px;
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      text-align: center;
+    }
+    .hover-box:hover {
+  
+      height: 420px;
+  
+    }
+
+    .hover-box:hover .overlay {
+      opacity: 1;
+    
+      transform: scale(1.05);
+    }
+
+    .hover-box .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url("../Images/About-1.jpg") no-repeat center center/cover;
+      opacity: 0;
+      transition: 0.5s ease;
+      z-index: 0;
+    }
+
+    .hover-box .content {
+      position: relative;
+      z-index: 1;
+      color: #C7C8CA;
+      transition: color 0.4s ease;
+    }
+
+    .hover-box:hover .content {
+      color: white ;
+    }
+
+    .hover-box h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hover-box h5 {
+      font-weight: 600;
+    }
+
+    .hover-box p {
+      font-size: 0.95rem;
+    }
+
+    .btn-learn {
+      margin-top: 10px;
+      border: 1px solid #000;
+      transition: 0.3s;
+    }
+
+    .hover-box:hover .btn-learn {
+      background-color: #fff;
+      color: #000;
+    }

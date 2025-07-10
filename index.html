@@ -14,9 +14,17 @@
     <!-- Custom Style-->
         <link rel="stylesheet" href="css/Custom.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <style>
+                    body {
+        font-family: "Alata", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
             html {
                 scroll-behavior: smooth;
             }
@@ -94,10 +102,8 @@
             }
         </style>
 </head>
-<body>
-    <div class="loader" id="pageLoader">
-        <div></div>
-      </div>
+<body style="background-color: #edeef0; ">
+
       <button id="backToTop"><i class="fas fa-chevron-up"></i></button>
     <section id="Header">
     <nav class="navbar navbar-expand-lg background-mainColor px-5 ">
@@ -137,7 +143,7 @@
     </section>
 
 
-  <section id="home">
+<section id="home">
 <div class="home-slider owl-carousel js-fullheight">
     <div class="slider-item js-fullheight"class="opacity-75" style="background-image:url(Images/Slider1.JPG); ">
         <div class="overlay"></div>
@@ -170,116 +176,94 @@
 </section>
 
 
-<section id="about-us" class="py-5">
+<section id="about-us" class="py-5 mt-3">
     <div class="container">
-        <div class="row align-items-center">
-            <!-- Left Side: Text -->
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <h1 class="Header-Color mb-4">About Us</h1>
-                <p class="text-dark">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere doloremque mollitia ducimus, ea earum eos voluptas impedit obcaecati dolores, rem, qui accusantium? Fugit ullam libero temporibus possimus odit reprehenderit, illo dolorum dolor aliquam sequi. Voluptate doloribus, expedita laudantium officiis odio delectus ducimus. Nemo, vel.
-                </p>
-            </div>
-
-            <!-- Right Side: Image -->
-            <div class="col-lg-6 text-center">
-                <img src="Images/Slider1.JPG" alt="About Us" class="img-fluid rounded shadow">
-            </div>
+      <div class="row align-items-center gap-5">
+        <!-- النص -->
+        <div class="col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1">
+          <h1 class="Header-Color mb-4 fw-semibold">About Us</h1>
+          <p class="text-dark" style="font-size: 16px;">
+            At Unique Event Logistics, we turn complexity into simplicity. Specializing in transport
+            solutions, venue operations, and project consulting, we ensure seamless execution for
+            world-class events. From moving people and materials to managing logistics and
+            technology, we bring innovation, precision, and creativity to every project.
+            With a single point of contact and end-to-end support, we save you time, streamline
+            operations, and deliver exceptional results. Whether it's a private gathering or a global
+            event, Unique Event Logistics is your trusted partner for flawless execution and
+            unforgettable experiences.
+          </p>
         </div>
+  
+        <!-- الصور -->
+        <div class="col-lg-5 position-relative order-1 order-lg-2" style="min-height: 320px;">
+          <!-- الصورة الخلفية الملونة -->
+          <div class="position-absolute rounded shadow background-mainColor bg-layer"></div>
+  
+          <!-- الصورة الأولى -->
+          <img src="Images/About-2.jpg" class="position-absolute rounded shadow img-1" alt="About 2">
+  
+          <!-- الصورة الثانية -->
+          <img src="Images/About-1.jpg" class="position-absolute rounded shadow img-2" alt="About 1">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="services" class="py-5 bg-light">
-    <div class="container">
-        <!-- Title -->
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Our Services</h2>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipiscing elit eget aenean id volutpat.</p>
-        </div>
-
-        <!-- Cards Grid -->
-        <div class="row g-4">
-            <!-- Card 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm text-center p-3">
-                    <img src="Images/Slider1.JPG" class="card-img-top rounded" alt="Service 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Service Title 1</h5>
-                        <p class="card-text text-muted">Short description about the service. You can control this.</p>
-                        <a href="#" class="btn btn-outline-primary">View Service</a>
-                    </div>
-                </div>
+<section id="services" class="py-5 mt-3 " style="background-color: #e7e7e9; " >
+    <div class="container ">
+        <div class="row my-5" >
+          <!-- Box 1 -->
+          <div class="col-md-3 " >
+            <div class="hover-box  " style=" background-color: #233F76;">
+              <div class="overlay"></div>
+              <div class="content ">
+                <h2 class="">01</h2>
+                <h5 class="mt-5 ">Organizing Celebrations & Special Evenets</h5>
+              </div>
             </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm text-center p-3">
-                    <img src="Images/Slider1.JPG" class="card-img-top rounded" alt="Service 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Service Title 2</h5>
-                        <p class="card-text text-muted">Short description about the service. You can control this.</p>
-                        <a href="#" class="btn btn-outline-primary">View Service</a>
-                    </div>
-                </div>
+          </div>
+          <!-- Box 2 -->
+          <div class="col-md-3">
+            <div class="hover-box "style=" background-color: #233F76;">
+              <div class="overlay"></div>
+              <div class="content">
+                <h2 class="">02</h2>
+                <h5 class="mt-5">Safety & Securtiy Planning</h5>
+           
+              </div>
             </div>
-
-            <!-- Card 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm text-center p-3">
-                    <img src="Images/Slider1.JPG" class="card-img-top rounded" alt="Service 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Service Title 3</h5>
-                        <p class="card-text text-muted">Short description about the service. You can control this.</p>
-                        <a href="#" class="btn btn-outline-primary">View Service</a>
-                    </div>
-                </div>
-            </div>
-
+          </div>
+          <!-- Box 3 -->
+          <div class="col-md-3">
+            <div class="hover-box " style=" background-color: #233F76;">
+              <div class="overlay"></div>
+              <div class="content ">
+                <h2 class=" ">03</h2>
+                <h5 class="mt-5">Providing & Managing Event Equipment</h5>
          
+            
+              </div>
+            </div>
+          </div>
+          <!-- Box 4 -->
+          <div class="col-md-3">
+            <div class="hover-box " style=" background-color: #233F76;">
+              <div class="overlay"></div>
+              <div class="content ">
+                <h2 class=" ">04</h2>
+                <h5 class="mt-5">Delivering Daily Reports & Development & Follow Ups</h5>
+           
+              </div>
+            </div>
+          </div>
+          
         </div>
-        <div class="row g-4 mt-5">
-            <!-- Card 4 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm text-center p-3">
-                    <img src="Images/Slider1.JPG" class="card-img-top rounded" alt="Service 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Service Title 1</h5>
-                        <p class="card-text text-muted">Short description about the service. You can control this.</p>
-                        <a href="#" class="btn btn-outline-primary">View Service</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm text-center p-3">
-                    <img src="Images/Slider1.JPG" class="card-img-top rounded" alt="Service 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Service Title 2</h5>
-                        <p class="card-text text-muted">Short description about the service. You can control this.</p>
-                        <a href="#" class="btn btn-outline-primary">View Service</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm text-center p-3">
-                    <img src="Images/Slider1.JPG" class="card-img-top rounded" alt="Service 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Service Title 3</h5>
-                        <p class="card-text text-muted">Short description about the service. You can control this.</p>
-                        <a href="#" class="btn btn-outline-primary">View Service</a>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
+      </div>
 </section>
 
-<section id="why-choose-us" class="py-5 bg-white">
+
+
+<section id="why-choose-us" class="py-5 mt-3">
     <div class="container">
         <div class="row align-items-center">
             <!-- Left Side: Features -->
@@ -325,7 +309,7 @@
     </div>
 </section>
 
-<section id="mission" class="py-5 bg-white">
+<section id="mission" class="py-5 mt-3" style="background-color: #e7e7e9;">
     <div class="container">
         <!-- Title -->
         <div class="text-center mb-5">
@@ -376,7 +360,7 @@
     </div>
 </section>
 
-<section id="clients" class="py-5 bg-light">
+<section id="clients" class="py-5 mt-3">
     <div class="container">
       <!-- Title -->
       <div class="text-center mb-5">
@@ -384,50 +368,39 @@
         <p class="text-muted">We are proud to work with these amazing brands.</p>
       </div>
   
-      <!-- Bootstrap Carousel -->
-      <div id="clientsCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-  
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="d-flex justify-content-center gap-5  flex-wrap">
-              <img src="Images/Slider1.JPG" alt="Client 1" class="px-4" style="max-height: 100px;">
-              <img src="Images/Slider1.JPG" alt="Client 2" class="px-4" style="max-height: 100px;">
-              <img src="Images/Slider1.JPG" alt="Client 3" class="px-4" style="max-height:100px;">
-              <img src="Images/Slider1.JPG" alt="Client 4" class="px-4" style="max-height: 100px;">
-            </div>
-          </div>
-  
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center gap-5 flex-wrap">
-              <img src="Images/Slider1.JPG" alt="Client 5" class="px-4" style="max-height: 100px;">
-              <img src="Images/Slider1.JPG" alt="Client 6" class="px-4" style="max-height: 100px;">
-              <img src="Images/Slider1.JPG" alt="Client 7" class="px-4" style="max-height: 100px;">
-              <img src="Images/Slider1.JPG" alt="Client 8" class="px-4" style="max-height: 100px;">
-            </div>
-          </div>
-  
+      <!-- Custom Carousel -->
+      <div class="position-relative">
+        <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap" id="customCarousel">
+          <!-- These images will be dynamically controlled -->
+          <img src="Images/Clients/NEP.png" class="carousel-img small-img" alt="Client 1">
+          <img src="Images/Clients/LIVGolf.png" class="carousel-img big-img" alt="Client 2">
+          <img src="Images/Clients/parentefireworks.png" class="carousel-img small-img" alt="Client 3">
         </div>
   
-      
+        <!-- Navigation Buttons -->
+        <button class="custom-carousel-btn position-absolute" style="left: 0;" onclick="prevSlide()">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="custom-carousel-btn position-absolute" style="right: 0;" onclick="nextSlide()">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
     </div>
   </section>
 
-  <footer class="background-mainColor text-white py-5">
+  <footer class="background-mainColor text-white py-5 pb-3 mt-3">
     <div class="container">
       <div class="row">
   
         <!-- Column 1: Contact -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 col-6 mb-4">
           <h5 class="mb-3">Contact</h5>
           <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> info@example.com</p>
           <p><i class="fa-solid fa-phone me-2"></i> +962 7 9999 9999</p>
         </div>
   
         <!-- Column 2: Links -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 col-6 mb-4">
           <h5 class="mb-3">Links</h5>
           <ul class="list-unstyled">
             <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
@@ -438,7 +411,7 @@
         </div>
   
         <!-- Column 3: Socials -->
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4  mb-4">
           <h5 class="mb-3">Socials</h5>
           <div class="row text-center">
             <div class="col-1">
@@ -468,29 +441,58 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script>
+    <script>
     AOS.init();
+    </script>
+
+    <script>
+        const images = [
+        "Images/Clients/NEP.png",
+        "Images/Clients/LIVGolf.png",
+        "Images/Clients/parentefireworks.png",
+        "Images/Clients/Rotion.png",
+        "Images/Clients/Unique_Nobackground.png"
+        ];
+    
+        let currentIndex = 1; // الصورة في المنتصف
+    
+        function updateCarousel() {
+        const container = document.getElementById('customCarousel');
+        container.innerHTML = '';
+    
+        const prevIndex = (currentIndex - 1 + images.length) % images.length;
+        const nextIndex = (currentIndex + 1) % images.length;
+    
+        const prevImg = document.createElement('img');
+        prevImg.src = images[prevIndex];
+        prevImg.className = 'carousel-img small-img';
+    
+        const currentImg = document.createElement('img');
+        currentImg.src = images[currentIndex];
+        currentImg.className = 'carousel-img big-img';
+    
+        const nextImg = document.createElement('img');
+        nextImg.src = images[nextIndex];
+        nextImg.className = 'carousel-img small-img';
+    
+        container.appendChild(prevImg);
+        container.appendChild(currentImg);
+        container.appendChild(nextImg);
+        }
+    
+        function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+        }
+    
+        function prevSlide() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+        }
+    
+        // أول تحميل
+        updateCarousel();
+    </script>
   
-    // Loader Hide
-    window.addEventListener('load', () => {
-      document.getElementById('pageLoader').style.display = 'none';
-    });
-  
-    // Back to Top Button
-    const backToTop = document.getElementById('backToTop');
-    window.onscroll = () => {
-      if (window.scrollY > 300) {
-        backToTop.style.display = 'flex';
-        document.querySelector('.navbar').classList.add('scrolled');
-      } else {
-        backToTop.style.display = 'none';
-        document.querySelector('.navbar').classList.remove('scrolled');
-      }
-    };
-    backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-  </script>
 </body>
 </html>
