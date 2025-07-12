@@ -90,16 +90,16 @@
     .hover-box {
       position: relative;
       overflow: hidden;
-      padding: 50px 30px;
+      padding: 50px 15px;
       transition: all 0.4s ease;
-      height: 550px;
+      height: 400px;
       background-color: #fff;
       border: 1px solid #e0e0e0;
       text-align: center;
     }
     .hover-box:hover {
   
-      height: 560px;
+      height: 420px;
   
     }
 
@@ -110,17 +110,16 @@
     }
 
     .hover-box .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  z-index: 0;
-  opacity:0.2;
-}
-
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url("../Images/About-1.jpg") no-repeat center center/cover;
+      opacity: 0;
+      transition: 0.5s ease;
+      z-index: 0;
+    }
 
     .hover-box .content {
       position: relative;
@@ -132,16 +131,14 @@
     .hover-box:hover .content {
       color: white ;
     }
-    
+
     .hover-box h2 {
       font-size: 3rem;
       margin-bottom: 15px;
-      color:white;
     }
 
     .hover-box h5 {
       font-weight: 600;
-      color:white;
     }
 
     .hover-box p {
