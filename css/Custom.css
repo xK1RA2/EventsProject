@@ -1,3 +1,87 @@
+
+                    body {
+        font-family: "Alata", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #edeef0; 
+        }
+            html {
+                scroll-behavior: smooth;
+            }
+            .card:hover {
+                transform: translateY(-5px);
+                transition: 0.3s ease;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+            .btn-outline-primary:hover {
+                background-color: #007bff;
+                color: #fff;
+            }
+            .slider-item {
+                animation: fadeIn 1.5s ease-in-out;
+            }
+            @keyframes fadeIn {
+                0% { opacity: 0; transform: scale(1.05); }
+                100% { opacity: 1; transform: scale(1); }
+            }
+            .btn-social {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid white;
+            }
+            #backToTop {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background-color: #233F76;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                z-index: 9999;
+                cursor: pointer;
+                display: none;
+            }
+            .loader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: white;
+                z-index: 10000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .loader div {
+                width: 40px;
+                height: 40px;
+                border: 4px solid #007bff;
+                border-top: 4px solid transparent;
+                border-radius: 50%;
+                animation: spin 1s linear infinite;
+            }
+            @keyframes spin {
+                to { transform: rotate(360deg); }
+            }
+            .navbar {
+                transition: background-color 0.4s ease;
+            }
+            .navbar.scrolled {
+                background-color: rgba(0,0,0,0.8) !important;
+            }
+        
+
 .background-mainColor{
  background-color:#000F20;
 }
@@ -104,7 +188,7 @@
     }
 
     .hover-box:hover .overlay {
-      opacity: 1;
+      opacity: 0.6;
     
       transform: scale(1.05);
     }

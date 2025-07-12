@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bootstrap Website</title>
+    <title>Unique Event Logistics</title>
+    <!-- Icon for title bar  -->
+    <link rel="icon" href="Images/Logo/Logo.png" type="images/png" />
+
 
     <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,91 +22,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alata&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-        <style>
-                    body {
-        font-family: "Alata", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        }
-            html {
-                scroll-behavior: smooth;
-            }
-            .card:hover {
-                transform: translateY(-5px);
-                transition: 0.3s ease;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            }
-            .btn-outline-primary:hover {
-                background-color: #007bff;
-                color: #fff;
-            }
-            .slider-item {
-                animation: fadeIn 1.5s ease-in-out;
-            }
-            @keyframes fadeIn {
-                0% { opacity: 0; transform: scale(1.05); }
-                100% { opacity: 1; transform: scale(1); }
-            }
-            .btn-social {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                border: 1px solid white;
-            }
-            #backToTop {
-                position: fixed;
-                bottom: 30px;
-                right: 30px;
-                background-color: #233F76;
-                color: white;
-                border: none;
-                border-radius: 50%;
-                width: 45px;
-                height: 45px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 20px;
-                z-index: 9999;
-                cursor: pointer;
-                display: none;
-            }
-            .loader {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                height: 100vh;
-                background: white;
-                z-index: 10000;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .loader div {
-                width: 40px;
-                height: 40px;
-                border: 4px solid #007bff;
-                border-top: 4px solid transparent;
-                border-radius: 50%;
-                animation: spin 1s linear infinite;
-            }
-            @keyframes spin {
-                to { transform: rotate(360deg); }
-            }
-            .navbar {
-                transition: background-color 0.4s ease;
-            }
-            .navbar.scrolled {
-                background-color: rgba(0,0,0,0.8) !important;
-            }
-        </style>
+        
 </head>
-<body style="background-color: #edeef0; ">
-
+<body>
+    <!-- Back to Top Button -->
       <button id="backToTop"><i class="fas fa-chevron-up"></i></button>
     <section id="Header">
     <nav class="navbar navbar-expand-lg background-mainColor px-5 ">
@@ -214,16 +136,16 @@
         <div class="row my-5 gap-3 gap-md-0 " >
          <!-- Box 1 -->
 <div class="col-md-3 ">
-  <div class="hover-box" style="background-color: #233F76;">
+  <div class="hover-box" style="background-color: #233F76;" class="opacity-75">
     <div class="overlay" style="background: url('./Images/Services/Service-1.JPG') no-repeat center center/cover;"></div>
     <div class="content text-start">
       <h2 class="fw-bold text-white">01</h2>
-      <h5 class="text-white">Strategic Planning & Coordination</h5>
+      <h5 class="text-white ">Strategic Planning & Coordination</h5>
       <p>
-We design tailored logistic strategies, considering the unique requirements of
-each event. Our team meticulously plans resource allocation, timelines, and
-contingencies to ensure flawless execution.</p>
-    </div>
+  We design tailored logistic strategies, considering the unique requirements of
+  each event. Our team meticulously plans resource allocation, timelines, and
+  contingencies to ensure flawless execution.</p>
+      </div>
   </div>
 </div>
 
@@ -280,17 +202,18 @@ handling to guest welcome and care, we provide courteous and professional</p>
 
 
 <section id="why-choose-us" class="py-5 mt-3">
-    <div class="container">
+    <div class="container" >
         <div class="row align-items-center">
             <!-- Left Side: Features -->
-            <div class="col-lg-6  mb-4 mb-lg-0">
+            <div class="col-lg-7  mb-4 mb-lg-0">
                
                 <h2 class="fw-bold mb-4 Header-Color">Why Choose Us?</h2>
 
-                <div class="row">
+                <div class="row" >
+                 
                     <!-- Feature 1 -->
                     <div class="col-sm-6 mb-4">
-                        <h5><span class="Header-Color fw-bold me-2">01</span>Experience You Can Trust</h5>
+                        <h5 ><span class="Header-Color  fw-bold me-2">01</span>Experience You Can Trust</h5>
                         <p class="text-muted">
 With a proven track record in managing events of
 varying scales, we have the expertise to transform
@@ -327,7 +250,7 @@ minimize environmental impact.</p>
             </div>
 
             <!-- Right Side: Image/Video -->
-            <div class="col-lg-6 text-center">
+            <div class="col-lg-5 text-center">
                 <div class="position-relative">
                     <img src="Images/Why-choose-us/1.jpg" alt="Why Choose Us" class="img-fluid rounded shadow">
                     
