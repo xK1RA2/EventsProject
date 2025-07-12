@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bootstrap Website</title>
+    <title>Unique Event Logistics</title>
+
+    <link rel="icon" href="Images/Logo.png" type="image/png" />
 
     <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -14,201 +16,114 @@
     <!-- Custom Style-->
         <link rel="stylesheet" href="css/Custom.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-        <!-- Fonts -->
+    <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alata&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-        <style>
-                    body {
-        font-family: "Alata", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        }
-            html {
-                scroll-behavior: smooth;
-            }
-            .card:hover {
-                transform: translateY(-5px);
-                transition: 0.3s ease;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            }
-            .btn-outline-primary:hover {
-                background-color: #007bff;
-                color: #fff;
-            }
-            .slider-item {
-                animation: fadeIn 1.5s ease-in-out;
-            }
-            @keyframes fadeIn {
-                0% { opacity: 0; transform: scale(1.05); }
-                100% { opacity: 1; transform: scale(1); }
-            }
-            .btn-social {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                border: 1px solid white;
-            }
-            #backToTop {
-                position: fixed;
-                bottom: 30px;
-                right: 30px;
-                background-color: #233F76;
-                color: white;
-                border: none;
-                border-radius: 50%;
-                width: 45px;
-                height: 45px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 20px;
-                z-index: 9999;
-                cursor: pointer;
-                display: none;
-            }
-            .loader {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                height: 100vh;
-                background: white;
-                z-index: 10000;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .loader div {
-                width: 40px;
-                height: 40px;
-                border: 4px solid #007bff;
-                border-top: 4px solid transparent;
-                border-radius: 50%;
-                animation: spin 1s linear infinite;
-            }
-            @keyframes spin {
-                to { transform: rotate(360deg); }
-            }
-            .navbar {
-                transition: background-color 0.4s ease;
-            }
-            .navbar.scrolled {
-                background-color: rgba(0,0,0,0.8) !important;
-            }
-        </style>
 </head>
-<body style="background-color: #edeef0; ">
-
+<body>
+    <!-- Back to Top Button -->
       <button id="backToTop"><i class="fas fa-chevron-up"></i></button>
-    <section id="Header">
-    <nav class="navbar navbar-expand-lg background-mainColor px-5 ">
-        <div class="container justify-content-lg-center ">
-            <!-- Logo -->
-            <a class="navbar-brand " href="#">
-                <img src="Images/Logo.png" class="" height="75px" width="120px" alt="">
-            </a>
-    
-            <!-- Toggler button -->
-           <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-    <i class="fas fa-bars fs-2"></i>
-</button>
-    
-            <!-- Collapsible Menu -->
-            <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white " aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#about-us">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#mission">Missions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+      <!-- Header Section -->
+        <section id="Header">
+            <nav class="navbar navbar-expand-lg background-mainColor px-5 ">
+                <div class="container justify-content-lg-center ">
+                    <!-- Logo -->
+                    <a class="navbar-brand " href="#">
+                        <img src="Images/Logo.png" class="" height="75px" width="120px" alt="">
+                    </a>
+            
+                    <!-- Toggler button -->
+                      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <i class="fas fa-bars fs-2"></i>
+                      </button>
+                
+                    <!-- Collapsible Menu -->
+                    <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#about-us">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#mission">Missions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+<!-- Hero Section -->
+    <section id="home">
+      <div class="home-slider owl-carousel js-fullheight">
+        <div class="slider-item js-fullheight"class="opacity-75" style="background-image:url(Images/Slider1.JPG); ">
+            <div class="overlay"></div>
+          <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center">
+                      <h1 class="mb-3 ">Exceptional events  creating memories</h1>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
-    </nav>
+
+        <div class="slider-item js-fullheight" style="background-image:url(Images/Slider2.JPG); ">
+            <div class="overlay"></div>
+          <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                <div class="col-md-12 ftco-animate">
+                    <div class="text w-100 text-center ">
+                        <h1 class="mb-3 ">Exceptional events  creating memories</h1>
+                  
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-<section id="home">
-<div class="home-slider owl-carousel js-fullheight">
-    <div class="slider-item js-fullheight"class="opacity-75" style="background-image:url(Images/Slider1.JPG); ">
-        <div class="overlay"></div>
+<!-- About us section -->
+      <section id="about-us" class="py-5 mt-3">
       <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-            <div class="col-md-12 ftco-animate">
-                <div class="text w-100 text-center">
-                   
-                  <h1 class="mb-3 ">Exceptional events  creating memories</h1>
-              </div>
-            </div>
+        <div class="row align-items-center gap-5">
+          <!-- content -->
+          <div class="col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1">
+            <h1 class="Header-Color mb-4 fw-semibold">About Us</h1>
+            <p class="text-dark" style="font-size: 16px;">
+              At Unique Event Logistics, we turn complexity into simplicity. Specializing in transport
+              solutions, venue operations, and project consulting, we ensure seamless execution for
+              world-class events. From moving people and materials to managing logistics and
+              technology, we bring innovation, precision, and creativity to every project.
+              With a single point of contact and end-to-end support, we save you time, streamline
+              operations, and deliver exceptional results. Whether it's a private gathering or a global
+              event, Unique Event Logistics is your trusted partner for flawless execution and
+              unforgettable experiences.
+            </p>
           </div>
-      </div>
-    </div>
-
-    <div class="slider-item js-fullheight" style="background-image:url(Images/Slider2.JPG); ">
-        <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-            <div class="col-md-12 ftco-animate">
-                <div class="text w-100 text-center ">
-                    <h1 class="mb-3 ">Exceptional events  creating memories</h1>
-               
-              </div>
-            </div>
+    
+          <!-- images -->
+          <div class="col-lg-5 position-relative order-1 order-lg-2" style="min-height: 320px;">
+            <div class="position-absolute rounded shadow background-mainColor bg-layer"></div>
+            <img src="Images/About-2.jpg" class="position-absolute rounded shadow img-1" alt="About 2">
+            <img src="Images/About-1.jpg" class="position-absolute rounded shadow img-2" alt="About 1">
           </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="about-us" class="py-5 mt-3">
-    <div class="container">
-      <div class="row align-items-center gap-5">
-        <!-- النص -->
-        <div class="col-lg-6 mb-4 mb-lg-0 order-2 order-lg-1">
-          <h1 class="Header-Color mb-4 fw-semibold">About Us</h1>
-          <p class="text-dark" style="font-size: 16px;">
-            At Unique Event Logistics, we turn complexity into simplicity. Specializing in transport
-            solutions, venue operations, and project consulting, we ensure seamless execution for
-            world-class events. From moving people and materials to managing logistics and
-            technology, we bring innovation, precision, and creativity to every project.
-            With a single point of contact and end-to-end support, we save you time, streamline
-            operations, and deliver exceptional results. Whether it's a private gathering or a global
-            event, Unique Event Logistics is your trusted partner for flawless execution and
-            unforgettable experiences.
-          </p>
-        </div>
-  
-        <!-- الصور -->
-        <div class="col-lg-5 position-relative order-1 order-lg-2" style="min-height: 320px;">
-          <!-- الصورة الخلفية الملونة -->
-          <div class="position-absolute rounded shadow background-mainColor bg-layer"></div>
-  
-          <!-- الصورة الأولى -->
-          <img src="Images/About-2.jpg" class="position-absolute rounded shadow img-1" alt="About 2">
-  
-          <!-- الصورة الثانية -->
-          <img src="Images/About-1.jpg" class="position-absolute rounded shadow img-2" alt="About 1">
         </div>
       </div>
-    </div>
-  </section>
-
+      </section>
+<!-- Servces Section -->
 <section id="services" class="py-5 mt-3 " style="background-color: #e7e7e9; " >
     <div class="container ">
         <div class="row my-5" >
@@ -229,7 +144,6 @@
               <div class="content">
                 <h2 class="">02</h2>
                 <h5 class="mt-5">Safety & Securtiy Planning</h5>
-           
               </div>
             </div>
           </div>
@@ -240,8 +154,6 @@
               <div class="content ">
                 <h2 class=" ">03</h2>
                 <h5 class="mt-5">Providing & Managing Event Equipment</h5>
-         
-            
               </div>
             </div>
           </div>
@@ -252,7 +164,6 @@
               <div class="content ">
                 <h2 class=" ">04</h2>
                 <h5 class="mt-5">Delivering Daily Reports & Development & Follow Ups</h5>
-           
               </div>
             </div>
           </div>
