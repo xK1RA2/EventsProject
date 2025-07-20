@@ -83,10 +83,22 @@
       top: 20px;
       height: 280px;
     }
+    .hover-box {
+      position: relative;
+      overflow: hidden;
+      padding: 50px 30px;
+      transition: all 0.4s ease;
+      height: 500px;
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      text-align: center;
+    }
+    .hover-box:hover {
+  
+      height: 520px;
+  
+    }
   }
-
-
-
     .hover-box {
       position: relative;
       overflow: hidden;
@@ -104,8 +116,7 @@
     }
 
     .hover-box:hover .overlay {
-      opacity: 1;
-    
+      opacity: 0.6;
       transform: scale(1.05);
     }
 
